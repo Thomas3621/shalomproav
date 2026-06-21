@@ -747,7 +747,7 @@
 
   // ----- send-to: whatsapp + email -----
   var WA_NUMBER='919495583621';
-  var GS_ENDPOINT='https://script.google.com/macros/s/AKfycbyUqIVLU4ywaSTvyvXNOLZhbWs_dXRhWdoZNLnKP42SrFNjCgRzuMVJiHmDCdWB_fovhw/exec'; // Google Apps Script /exec URL (handles BOTH chat + mail) // TODO: replace with your WhatsApp number (international, digits only, no + or spaces)
+  var GS_ENDPOINT='https://script.google.com/macros/s/AKfycbwkcD_w1GLU9yID6SiQ-B4WNsHNoXS5fOyY8hmWV12qAjw8xwBAEMF6LdQCiswsJHHpaQ/exec'; // Google Apps Script /exec URL (handles BOTH chat + mail) // TODO: replace with your WhatsApp number (international, digits only, no + or spaces)
   function transcript(){
     return history.filter(function(m){return m.role==='user'||m.role==='assistant';})
       .map(function(m){return (m.role==='user'?'Visitor':'Assistant')+': '+m.content;}).join('\n\n');
